@@ -24,4 +24,7 @@ class Player(Turtle):
     def level_pass(self):
         if self.ycor() == FINISH_LINE_Y:
             self.pos_reset()
+            return True
+        else:
+            return False
 
